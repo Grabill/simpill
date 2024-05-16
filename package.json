@@ -1,0 +1,14 @@
+{
+	"name": "simpill",
+	"version": "1.0.0",
+	"scripts": {
+		"backend": "cd ./simpill-be && npm run start:dev:p",
+		"frontend": "cd ./simpill-fe && npm run start",
+        "git": "git submodule update --remote --merge",
+		"start": "npm run git && concurrently -p \"[{name}]\" -n \"BACKEND,FRONTEND\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run backend\" \"npm run frontend\"",
+		"sync": "cd ./simpill-be && npm install && cd ../simpill-fe && npm install && cd .. && npm install"
+    },
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
