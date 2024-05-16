@@ -1,0 +1,6 @@
+[submodule "simpill-be"]
+	path = simpill-be
+	url = https://github.com/Grabill/simpill-be.git
+[submodule "simpill-fe"]
+	path = simpill-fe
+	url = https://github.com/Grabill/simpill-fe.git
