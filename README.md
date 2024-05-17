@@ -11,3 +11,24 @@ Update 2 submodules.
 Run `npm install` on all `package.json` files. Should be run after updating submodules.
 ### `npm run start`
 Start both backend and frontend.
+
+## Run python backend (within the backend folder)
+```
+cd suggestion
+```
+Create a virtual environment
+```
+python -m venv venv
+```
+Activate the virtual environment
+```
+source venv/bin/activate
+```
+Install the required packages
+```
+pip install -r requirements.txt
+```
+Run the script
+```
+python suggestion.py
+```
